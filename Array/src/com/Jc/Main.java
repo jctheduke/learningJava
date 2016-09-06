@@ -16,6 +16,7 @@ public class Main {
 
     public static int[] getIntegers(int n){
         Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the numbers you want to print in desending order \r");
         int[] arrayInt = new int[n];
 
         for(int i = 0; i < n; i++){
