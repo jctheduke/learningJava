@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ArrayListMobilePhone.iml" filepath="$PROJECT_DIR$/ArrayListMobilePhone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayList_MobileContactBook.iml" filepath="$PROJECT_DIR$/ArrayList_MobileContactBook.iml" />
     </modules>
   </component>
 </project>
