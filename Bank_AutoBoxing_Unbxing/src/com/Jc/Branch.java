@@ -35,6 +35,13 @@ public class Branch {
         else System.out.println("Customer already in the data base");
     }
 
+    public void addCustomer(String customerName,double amount){
+        if(!findCustomer(customerName)){
+            customersList.add(new Customer(customerName,amount));
+        }
+        else System.out.println("Customer already in the data base");
+    }
+
     private boolean findCustomer(String customerName){
         for(Customer customer : customersList){
             return customer.sameCustomer(customerName);

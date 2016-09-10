@@ -23,22 +23,41 @@ public class Main {
                     startBranch(bank);
                     break;
                 case 4:
-                    addCustomer();
+                    bank.addCustomer();
+                    break;
+                case 5:
+                    bank.customerTransaction();
+                    break;
+                case 6:
+                    bank.updateTransaction();
+                    break;
+                case 7:
+                    getBankDetail(bank);
+                    break;
+                case 8:
+                    bank.getBalancePerBranch();
+                    break;
+                case 9:
+                    quit = true;
+                    System.out.println("quitting the applicaiton");
+                    break;
+                default:
+                    System.out.println("Please give correct input");
             }
 
         }
     }
 
     public static void printInstructions(){
-        System.out.println("1 : print Instructions" +
-                "2: Start your Banking Bussiness" +
-                "3: open a new Branch" +
-                "4: Add customer to the branch" +
-                "5: Make a transation for the customer" +
-                "6: update the transaction" +
-                "7: get the bank details" +
-                "8: get balances for each branch" +
-                "9: quit your application");
+        System.out.println("1 : print Instructions \n" +
+                "2: Start your Banking Bussiness \n" +
+                "3: open a new Branch \n" +
+                "4: Add customer to the branch \n" +
+                "5: Make a transation for the customer \n" +
+                "6: update the transaction \n" +
+                "7: get the bank details \n" +
+                "8: get balances for each branch \n" +
+                "9: quit your application \n");
     }
 
     public static Bank  startBank(){
@@ -55,10 +74,12 @@ public class Main {
         bank.addBranch(branchName);
     }
 
-    public static void addCustomer(Bank bank){
-        Scanner  userInput = new Scanner(System.in);
-        System.out.println("What branch this customer want to join");
-        String branchName = userInput.next();
-        bank.
+    public static void getBankDetail(Bank bank){
+        System.out.println("Name of the bank" + bank.getName());
+        System.out.println("Total amount in the bank" + bank.totalAountInBank());
+        System.out.println("Total no of branches"+ bank.noOfBranches());
+        System.out.println("Total no of customers"+ bank.noOfCustomers());
     }
+
+
 }
